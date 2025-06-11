@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NOUN Student Portal – Dashboard</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f7f9; margin: 0; padding: 0; }
+    .header { background: #046b33; color: white; text-align: center; padding: 28px 5px 16px 5px; }
+    .header img.logo { height: 74px; margin-bottom: 7px; }
+    .header .passport { border-radius: 12px; width: 140px; margin: 12px auto 0 auto; border: 2px solid #046b33; }
+    .main { padding: 24px 8px 16px 8px; max-width: 1000px; margin: 0 auto; }
+    .school-email { color: #075494; font-weight: bold; font-size: 15px; }
+    nav { text-align: center; background: #e7ece9; padding: 12px 2px; }
+    nav button { margin: 5px 7px; padding: 12px 18px; font-size: 14px; border: none; border-radius: 5px; background-color: #d2efe0; color: #022f18; cursor: pointer; }
+    nav button.active { background: #046b33; color: #fff; }
+    section { display: none; background: #fff; border-radius: 7px; padding: 22px 10px; margin: 18px 0; box-shadow: 0 1px 5px #0001; }
+    section.active { display: block; }
+    table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+    th, td { border: 1px solid #a7c8b2; padding: 9px; text-align: center; }
+    th { background: #e5fff2; }
+    .full { color: red; font-weight: bold; }
+    .avail { color: green; font-weight: bold; }
+    .note, .alert { margin: 16px 0; padding: 12px; border-radius: 6px; font-size: 15px; }
+    .note { background: #fffbe6; border-left: 5px solid #ffcc00; }
+    .alert { background: #ffe8e8; border-left: 5px solid red; color: #900; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="Noun Logo-1.png" class="logo" alt="NOUN Logo"/>
+    <h1>NOUN STUDENT PORTAL – DASHBOARD</h1>
+    <p>National Open University of Nigeria</p>
+    <p><b>Nnah Mbere-Abasi Cletus</b> | Matric: NOU249519824 | B.Sc. Entrepreneurship</p>
+    <span class="school-email">Email: nou249519824@noun.edu.ng</span>
+    <div><img src="Mbere-Abasi passport.JPG" alt="Passport Photo" class="passport"/></div>
+  </div>
+  <div class="main">
+    <nav>
+    <style>
+      .tab-btn { display: inline-block; margin-bottom: 4px; }
+      .tab-content { display: none; }
+      .tab-content.active { display: block !important; }
+    </style>
+      <button data-tab="profile" class="tab-btn active">Profile & Bank Details</button>
+      <button data-tab="results" class="tab-btn">Academic Results</button>
+      <button data-tab="finance" class="tab-btn">Financial Clearance</button>
+      <button data-tab="jamb" class="tab-btn">JAMB Regularization</button>
+      <button data-tab="practicals" class="tab-btn">Practicals & Accommodation</button>
+      <button data-tab="laptop" class="tab-btn">Laptop Requirements</button>
+      <button data-tab="alerts" class="tab-btn">Messages & Alerts</button>
+    </nav>
+
+    <section id="profile" class="tab-content active">
+      <h2>Profile & Bank Details</h2>
+      <p><b>Name:</b> Nnah Mbere-Abasi Cletus</p>
+      <p><b>Matric Number:</b> NOU249519824</p>
+      <p><b>Programme:</b> B.Sc. Entrepreneurship</p>
+      <p><b>Study Centre:</b> Abuja (Dutse-Alhaji)</p>
+      <p><b>Session:</b> 2024/2025</p>
+      <p><b>Bank:</b> Zenith Bank International (Standard Name)</p>
+      <p><b>Account No:</b> 2083461549</p>
+      <p><b>Account Name:</b> Nnah Mbere-Abasi Cletus</p>
+      <p><b>Email:</b> nou249519824@noun.edu.ng</p>
+    </section>
+
+    <section id="results" class="tab-content">
+      <h2>Academic Results – 100L First Semester</h2>
+      <table>
+        <tr><th>S/N</th><th>Course Code</th><th>Course Title</th><th>Credit Unit</th><th>Grade</th></tr>
+        <tr><td>1</td><td>ACC101</td><td>Elements of Book-Keeping</td><td>2</td><td>B</td></tr>
+        <tr><td>2</td><td>BUS105</td><td>Elements of Management I</td><td>2</td><td>B</td></tr>
+        <tr><td>3</td><td>CSS121</td><td>Introduction to Psychology</td><td>3</td><td>A</td></tr>
+        <tr><td>4</td><td>ECO121</td><td>Principles of Economics I</td><td>3</td><td>B</td></tr>
+        <tr><td>5</td><td>ENT101</td><td>Introduction to Entrepreneurship</td><td>2</td><td>B</td></tr>
+        <tr><td>6</td><td>GST101</td><td>Use of English and Communication I</td><td>2</td><td>B</td></tr>
+        <tr><td>7</td><td>GST105</td><td>Philosophy of Science</td><td>2</td><td>B</td></tr>
+        <tr><td>8</td><td>MTH105</td><td>Maths for Management I</td><td>3</td><td>C</td></tr>
+        <tr><td>9</td><td>NOU107</td><td>Distance Learner Guide</td><td>3</td><td>A</td></tr>
+      </table>
+      <h3>Second Semester</h3>
+      <p>Results awaiting, exams just concluded.</p>
+    </section>
+
+    <section id="finance" class="tab-content">
+      <h2>Financial Clearance</h2>
+      <p><b>Semester 1 Total Paid:</b> ₦67,000</p>
+      <p><b>Semester 2 Total Paid:</b> ₦139,250</p>
+      <p><b>Wallet Balance:</b> ₦9,500</p>
+      <div class="note">
+        All school fees/payments must now be made ONLY through your NOUN student e-wallet. For financial accuracy and security, e-wallets must be funded from your registered bank account. This system ensures traceability of refunds, records unsuccessful transactions, prevents fraud, and helps NOUN keep accurate student payment records.
+      </div>
+    </section>
+
+    <section id="jamb" class="tab-content">
+      <h2>JAMB Regularization</h2>
+      <div class="alert">
+        ⚠️ ACTION REQUIRED: Pay ₦38,000 for JAMB Regularization NOW to enable NYSC service after graduation.<br>
+        JAMB Regularization for your set expires after 100L second semester exams.<br>
+        You were admitted without JAMB. NOUN provides an alternative direct processing route for you.
+      </div>
+    </section>
+
+    <section id="practicals" class="tab-content">
+<h2>Practicals & Accommodation</h2>
+<p><b>Entrepreneurship Practical Program:</b> Practical has commenced. You must complete it after your second semester exams.</p>
+<p><b>Duration:</b> Until start of 2025/2026 session (when 200 level begins)</p>
+<p><b>Accommodation Details:</b></p>
+<ul>
+  <li>Minimum of ₦600,000 is required for accommodation in your practical state.</li>
+  <li>Accommodation is essential and mandatory for approval to participate in practicals.</li>
+  <li>Payment must be made urgently through your NOUN e-wallet (funded only from your registered bank account) for financial safety, traceability, and to prevent transaction errors or refund issues.</li>
+  <li>Once approved, the school will reserve your accommodation for the selected practical state.</li>
+</ul>
+<div class="alert">
+  Centres are allocated on a first-pay, first-serve basis. Once full, you’ll need to wait for the next practical window. Some centres are already full. Make prompt payment to avoid deferral to the next batch — which could interrupt your academic season/year and delay graduation or convocation.
+</div>
+
+      <h2>Practicals & Accommodation</h2>
+      <p>📌 Practical has commenced. You must complete it after your second semester exams.</p>
+      <p><b>Duration:</b> Until start of 2025/2026 session (when 200 level begins)</p>
+      <p>🏠 <b>Accommodation:</b> For safety, transparency, and financial accuracy, accommodation payment must be made urgently through your NOUN e-wallet. Your e-wallet must be funded only from your registered student bank account to ensure refund traceability, prevent payment failures, and ensure housing approval in your selected state.</p>
+      <div class="alert">
+        Centres are allocated on a first-pay, first-serve basis. Once full, you’ll need to wait for the next practical window. Some centres are already full. Make prompt payment to avoid deferral to the next batch — which could interrupt your academic season or delay graduation and convocation.
+      </div>
+    </section>
+
+    <section id="laptop" class="tab-content">
+      <h2>Laptop Requirements</h2>
+      <p>💻 Owning a qualifying laptop is <b>mandatory</b> for digital communication, online sessions, video classes, and to support entrepreneurial software training during your practical.</p>
+      <ul>
+        <li>Required features: Latest-gen Intel Core i5/i7 (13th Gen), AMD Ryzen 5/7 (7000 series), or Apple M3 chip</li>
+        <li>Minimum 16GB RAM, 512GB SSD, Full HD display, Webcam, Microphone, WiFi 6, Windows 11/MacOS/Ubuntu OS, USB-C, HDMI ports, Genuine security software</li>
+        <li>Laptop will be inspected by the school for approval before project/practical can start</li>
+        <li>Mandatory for project documentation and participation in live/virtual entrepreneurial sessions</li>
+      </ul>
+    </section>
+
+    <section id="alerts" class="tab-content">
+      <h2>Messages & Alerts</h2>
+      <div class="alert">
+        ✅ You are fully cleared for 100L.<br>
+        ⚠️ JAMB Regularization pending – ₦38,000 required.<br>
+        💻 Present laptop before practical/project approval.<br>
+        📌 Accommodation must be urgently paid from your registered bank to your NOUN e-wallet to avoid rejection.
+      </div>
+    </section>
+  </div>
+  <script>
+    document.querySelectorAll('.tab-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+        button.classList.add('active');
+        document.getElementById(button.dataset.tab).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
