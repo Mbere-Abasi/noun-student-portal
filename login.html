@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <img src="noun-logo.png" alt="NOUN Logo" class="logo">
+        <img src="passport.jpg" alt="Student Passport" class="passport">
+        <h2>Students' Login Page</h2>
+        <form onsubmit="return validateLogin()">
+            <input type="text" id="matric" placeholder="Matric Number" required><br>
+            <input type="password" id="password" placeholder="Password" required><br>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script>
+        function validateLogin() {
+            const matric = document.getElementById('matric').value;
+            const password = document.getElementById('password').value;
+
+            if (matric === 'NOU249519824' && password === 'Mbere-Abasi@140996') {
+                localStorage.setItem('loggedIn', 'true');
+                window.location.href = 'index.html';
+                return false;
+            } else {
+                alert('Invalid login credentials');
+                return false;
+            }
+        }
+
+        if (localStorage.getItem('loggedIn') === 'true') {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
